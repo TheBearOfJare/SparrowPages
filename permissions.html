@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description"
-    content="Sparrow App - Location Permissions & Prominent Privacy Disclosure for Android & Wear OS.">
+    content="Sparrow App - Location & Internet Permissions Disclosure for Android and Wear OS in compliance with Google Play Developer Policies.">
   <meta name="theme-color" content="#000000">
-  <title>Sparrow - Location Permission & Privacy Disclosure</title>
+  <title>Sparrow - Permissions Disclosure</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -19,15 +19,16 @@
       <div class="brand-icon" aria-label="Sparrow Compass Icon">
         <!-- Google Material Icon: explore (compass) -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
-          <path d="m303-303 270-83 83-270-270 83-83 270Zm176.76-137q-16.76 0-28.26-11.74-11.5-11.73-11.5-28.5 0-16.76 11.74-28.26 11.73-11.5 28.5-11.5 16.76 0 28.26 11.74 11.5 11.73 11.5 28.5 0 16.76-11.74 28.26-11.73 11.5-28.5 11.5Zm.51 360q-82.74 0-155.5-31.5Q252-143 197.5-197.5t-86-127.34Q80-397.68 80-480.5t31.5-155.66Q143-709 197.5-763t127.34-85.5Q397.68-880 480.5-880t155.66 31.5Q709-817 763-763t85.5 127Q880-563 880-480.27q0 82.74-31.5 155.5Q817-252 763-197.68q-54 54.31-127 86Q563-80 480.27-80Zm.22-60Q622-140 721-239.49q99-99.48 99-241Q820-622 721-721t-240.51-99q-141.52 0-241 99Q140-622 140-480.49q0 141.52 99.49 241 99.48 99.49 241 99.49ZM480-480Z"/>
+          <path
+            d="m303-303 270-83 83-270-270 83-83 270Zm176.76-137q-16.76 0-28.26-11.74-11.5-11.73-11.5-28.5 0-16.76 11.74-28.26 11.73-11.5 28.5-11.5 16.76 0 28.26 11.74 11.5 11.73 11.5 28.5 0 16.76-11.74 28.26-11.73 11.5-28.5 11.5Zm.51 360q-82.74 0-155.5-31.5Q252-143 197.5-197.5t-86-127.34Q80-397.68 80-480.5t31.5-155.66Q143-709 197.5-763t127.34-85.5Q397.68-880 480.5-880t155.66 31.5Q709-817 763-763t85.5 127Q880-563 880-480.27q0 82.74-31.5 155.5Q817-252 763-197.68q-54 54.31-127 86Q563-80 480.27-80Zm.22-60Q622-140 721-239.49q99-99.48 99-241Q820-622 721-721t-240.51-99q-141.52 0-241 99Q140-622 140-480.49q0 141.52 99.49 241 99.48 99.49 241 99.49ZM480-480Z" />
         </svg>
       </div>
       <div class="prominent-badge">Google Play Prominent Disclosure</div>
-      <h1 class="app-title">Location Permissions</h1>
-      <p class="app-tagline">How Sparrow uses your location data on Android &amp; Wear&nbsp;OS</p>
+      <h1 class="app-title">Permissions Disclosure</h1>
+      <p class="app-tagline">Why Sparrow requires Location &amp; Internet on Android &amp; Wear&nbsp;OS</p>
     </header>
 
-    <!-- Core Purpose Card -->
+    <!-- Core Location Purpose Card -->
     <section class="card" aria-labelledby="purpose-heading">
       <h2 id="purpose-heading" class="card-title">
         <span class="card-title-icon">
@@ -37,37 +38,16 @@
               d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm8.94 3A8.994 8.994 0 0 0 13 3.06V1h-2v2.06A8.994 8.994 0 0 0 3.06 11H1v2h2.06A8.994 8.994 0 0 0 11 20.94V23h2v-2.06A8.994 8.994 0 0 0 20.94 13H23v-2h-2.06zM12 19c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z" />
           </svg>
         </span>
-        Why Sparrow Needs Location
+        Location Permissions (Foreground Only)
       </h2>
       <p class="card-desc">
-        <strong>Sparrow</strong> is a navigation app. As such, it requires data to help you navigate.
+        <strong>Sparrow</strong> (<code>com.thebearofjare.sparrow</code>) is a directional compass navigation app. Its
+        primary function is pointing a real-time vector arrow straight toward your destination with live distance and
+        heading calculations.
       </p>
       <p class="card-desc">
-        To calculate the relative heading and bearing between where you are standing and where you want to go, the app
-        must access your current coordinates (<code>ACCESS_FINE_LOCATION</code> and
-        <code>ACCESS_COARSE_LOCATION</code>).
+        To compute your magnetic bearing and remaining distance relative to your destination, Sparrow requests:
       </p>
-    </section>
-
-    <!-- Key Guarantees Pills -->
-    <section class="pills-grid" aria-label="Key Privacy Guarantees">
-      <div class="pill-card highlight-green">
-        <span class="pill-label">✓ In-Use Only</span>
-        <span class="pill-value">No background access</span>
-      </div>
-      <div class="pill-card highlight-green">
-        <span class="pill-label">✓ On-Device Only</span>
-        <span class="pill-value">100% processed locally</span>
-      </div>
-      <div class="pill-card highlight-green">
-        <span class="pill-label">✓ Zero Sharing</span>
-        <span class="pill-value">Never sent to servers</span>
-      </div>
-    </section>
-
-    <!-- Privacy & Usage Commitments -->
-    <section class="card" aria-labelledby="disclosure-heading">
-      <h2 id="disclosure-heading" class="card-title">Data Protection Commitments</h2>
       <ul class="policy-list">
         <li class="policy-item">
           <span class="bullet-check">
@@ -78,8 +58,8 @@
             </svg>
           </span>
           <div>
-            <strong>Foreground Only:</strong> Location data is accessed strictly while the app is open on your screen.
-            When you close, switch, or lock your phone or watch, all location querying immediately ceases.
+            <code>ACCESS_FINE_LOCATION</code>: Accesses precise GPS hardware sensors on your phone or smartwatch to
+            orient the directional needle with maximum accuracy.
           </div>
         </li>
         <li class="policy-item">
@@ -91,61 +71,188 @@
             </svg>
           </span>
           <div>
-            <strong>No Cloud or Server Transmission:</strong> Your location never leaves your device. Sparrow has no
-            backend servers or cloud storage collecting user coordinates.
-          </div>
-        </li>
-        <li class="policy-item">
-          <span class="bullet-check">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd" />
-            </svg>
-          </span>
-          <div>
-            <strong>No Third-Party Sharing or Sale:</strong> We do not include third-party tracking, advertising SDKs,
-            or analytics that gather location profiles.
-          </div>
-        </li>
-        <li class="policy-item">
-          <span class="bullet-check">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd" />
-            </svg>
-          </span>
-          <div>
-            <strong>Ephemeral In-Memory Math:</strong> Coordinates are used exclusively to calculate the real-time angle
-            of the compass needle. No location logs or movement history are retained.
+            <code>ACCESS_COARSE_LOCATION</code>: Provides approximate position data when GPS lock is establishing or
+            battery-saver location modes are active.
           </div>
         </li>
       </ul>
     </section>
 
-    <!-- How to Manage / Revoke -->
-    <section class="card" aria-labelledby="manage-heading">
-      <h2 id="manage-heading" class="card-title">Managing Your Permission</h2>
+    <!-- Key Guarantees Pills -->
+    <section class="pills-grid" aria-label="Key Privacy Guarantees">
+      <div class="pill-card highlight-green">
+        <span class="pill-label">✓ In-Use Only</span>
+        <span class="pill-value">No background tracking</span>
+      </div>
+      <div class="pill-card highlight-green">
+        <span class="pill-label">✓ On-Device Only</span>
+        <span class="pill-value">100% local calculation</span>
+      </div>
+      <div class="pill-card highlight-green">
+        <span class="pill-label">✓ Zero Sharing</span>
+        <span class="pill-value">Never sent to servers</span>
+      </div>
+      <div class="pill-card highlight-green">
+        <span class="pill-label">✓ Watch Standalone</span>
+        <span class="pill-value">Works with watch GPS</span>
+      </div>
+    </section>
+
+    <!-- Internet Permission Disclosure -->
+    <section class="card" aria-labelledby="internet-heading">
+      <h2 id="internet-heading" class="card-title">
+        <span class="card-title-icon">
+          <!-- Globe / Search Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+          </svg>
+        </span>
+        Internet Permission (Geocoding Only)
+      </h2>
       <p class="card-desc">
-        Location permission is requested at runtime. You can grant or revoke this permission at any time in system
-        settings:
+        Sparrow includes the <code>INTERNET</code> permission exclusively for two user-initiated actions:
+      </p>
+      <ul class="policy-list">
+        <li class="policy-item">
+          <span class="bullet-check">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+          <div>
+            <strong>In-App Place Search:</strong> Converting place names (e.g., "Eiffel Tower") or street addresses into
+            destination coordinates via Android's native <code>Geocoder</code> service.
+          </div>
+        </li>
+        <li class="policy-item">
+          <span class="bullet-check">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+          <div>
+            <strong>Resolving Shared Map Links:</strong> Unwrapping shortened URLs (such as <code>maps.app.goo.gl</code>)
+            when shared from Google Maps so coordinates can be extracted.
+          </div>
+        </li>
+      </ul>
+      <p class="card-desc" style="font-size: 0.83rem; margin-top: 0.25rem;">
+        <em>Important: Internet access is NEVER used to transmit user location coordinates, upload analytics, or
+          communicate with external tracking servers.</em>
+      </p>
+    </section>
+
+    <!-- Wear OS Operation -->
+    <section class="card" aria-labelledby="wearos-heading">
+      <h2 id="wearos-heading" class="card-title">Wear OS Smartwatch Operation</h2>
+      <p class="card-desc">
+        Sparrow is designed for seamless wearable navigation across both companion and standalone modes:
+      </p>
+      <ul class="policy-list">
+        <li class="policy-item">
+          <span class="bullet-check">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+          <div>
+            <strong>Companion Mode (Paired Phone):</strong> Destination coordinates and unit preferences synchronize
+            directly between your phone and watch via the Google Play Wearable API (local Bluetooth/Wi-Fi).
+          </div>
+        </li>
+        <li class="policy-item">
+          <span class="bullet-check">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+          <div>
+            <strong>Standalone Mode:</strong> When away from your phone, the Wear OS watch app uses its own built-in GPS
+            sensor to calculate distance and bearing independently.
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Privacy Commitments -->
+    <section class="card" aria-labelledby="commitments-heading">
+      <h2 id="commitments-heading" class="card-title">Data Protection Guarantees</h2>
+      <ul class="policy-list">
+        <li class="policy-item">
+          <span class="bullet-check">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+          <div>
+            <strong>Foreground Only:</strong> Location data is accessed strictly while Sparrow is open and visible on your
+            screen. The moment the app is closed, minimized, or your screen turns off, all location updates cease.
+          </div>
+        </li>
+        <li class="policy-item">
+          <span class="bullet-check">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+          <div>
+            <strong>Zero Remote Transmission:</strong> Your coordinates are never uploaded to any remote server, cloud
+            database, or external service.
+          </div>
+        </li>
+        <li class="policy-item">
+          <span class="bullet-check">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+          <div>
+            <strong>Ephemeral In-Memory Math:</strong> Coordinates are computed in volatile RAM to orient the compass dial
+            and calculate distance in real-time. No location telemetry logs or route histories are recorded.
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Managing Permissions -->
+    <section class="card" aria-labelledby="manage-heading">
+      <h2 id="manage-heading" class="card-title">Managing Permissions</h2>
+      <p class="card-desc">
+        You can review, grant, or revoke location permissions at any time through system settings:
       </p>
 
       <ol class="step-list">
-        <li class="step-item">Open your device <strong>Settings</strong>.</li>
+        <li class="step-item">Open your device <strong>Settings</strong> (Phone or Watch).</li>
         <li class="step-item">Tap <strong>Apps</strong> &rarr; <strong>Sparrow</strong>.</li>
         <li class="step-item">Tap <strong>Permissions</strong> &rarr; <strong>Location</strong>.</li>
-        <li class="step-item">Select <em>"Allow only while using the app"</em> or <em>"Don't allow"</em>.</li>
+        <li class="step-item">Choose <em>"Allow only while using the app"</em> or <em>"Don't allow"</em>.</li>
       </ol>
       <p class="card-desc" style="font-size: 0.8rem; margin-top: 0.25rem;">
-        <em>Note: If location permission is disabled, the compass needle cannot determine your direction relative to
-          your destination.</em>
+        <em>Note: If location permission is revoked, the compass needle cannot calculate the bearing toward your
+          destination.</em>
       </p>
     </section>
 
     <!-- Navigation / Actions -->
     <nav class="nav-links" aria-label="Page Navigation">
+      <a href="privacy.html" class="btn btn-secondary">
+        Read Full Privacy Policy &rarr;
+      </a>
       <a href="index.html" class="btn btn-secondary">
         &larr; Back to Sparrow Overview
       </a>
@@ -153,7 +260,10 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <p>&copy; Sparrow. Open &amp; transparent navigation for Android &amp; Wear&nbsp;OS.</p>
+      <p>&copy; Sparrow. Simple, private navigation for Android &amp; Wear&nbsp;OS.</p>
+      <p style="margin-top: 0.35rem;">
+        <a href="privacy.html">Privacy Policy</a> &bull; <a href="index.html">App Overview</a>
+      </p>
     </footer>
   </main>
 

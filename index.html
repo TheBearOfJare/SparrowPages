@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description"
-    content="Sparrow - Glanceable compass heading navigation for Android and Wear OS. Information and compliance documentation.">
+    content="Sparrow - Directional Compass Navigation for Android and Wear OS">
   <meta name="theme-color" content="#000000">
-  <title>Sparrow - Heading Navigation for Android & Wear OS</title>
+  <title>Sparrow - Directional Compass Navigation for Android &amp; Wear OS</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -24,62 +24,208 @@
         </svg>
       </div>
       <h1 class="app-title">Sparrow</h1>
-      <p class="app-tagline">Glanceable heading navigation for Android &amp; Wear&nbsp;OS</p>
+      <p class="app-tagline">Directional Compass Based Navigation for Android &amp; Wear&nbsp;OS</p>
     </header>
 
-    <!-- Overview Card -->
-    <section class="card" aria-labelledby="about-heading">
-      <h2 id="about-heading" class="card-title">
-        <span class="card-title-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z" />
-          </svg>
-        </span>
-        Navigate by Heading
-      </h2>
+    <!-- Documentation & Compliance Quick Links -->
+    <section class="card" aria-labelledby="quicklinks-heading">
+      <h2 id="quicklinks-heading" class="card-title">Documentation &amp; Compliance</h2>
       <p class="card-desc">
-        When complex turn-by-turn directions are unnecessary and you just need to know which way to walk, run, hike, or
-        ride, <strong>Sparrow</strong> points a clean compass directly at your destination.
+        Review our official Google Play compliance policies and disclosures:
       </p>
-      <p class="card-desc">
-        Engineered specifically for quick glances on smartwatches and mobile screens with ultra-low battery consumption.
-      </p>
-    </section>
-
-    <!-- Documentation & Compliance Hub -->
-    <section class="card" aria-labelledby="pages-heading">
-      <h2 id="pages-heading" class="card-title">Documentation &amp; Disclosures</h2>
-      <p class="card-desc">
-        Review our permission disclosures and privacy guarantees:
-      </p>
-
       <div class="nav-links">
-        <a href="permissions.html" class="btn btn-primary">
+        <a href="privacy.html" class="btn btn-primary">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
             <path
               d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
+          </svg>
+          Official Privacy Policy
+        </a>
+        <a href="permissions.html" class="btn btn-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path
+              d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm8.94 3A8.994 8.994 0 0 0 13 3.06V1h-2v2.06A8.994 8.994 0 0 0 3.06 11H1v2h2.06A8.994 8.994 0 0 0 11 20.94V23h2v-2.06A8.994 8.994 0 0 0 20.94 13H23v-2h-2.06zM12 19c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z" />
           </svg>
           Permissions Disclosure
         </a>
       </div>
     </section>
 
-    <!-- Privacy Principles -->
-    <section class="pills-grid" aria-label="Privacy Highlights">
+    <!-- Overview & Vision Card -->
+    <section class="card" aria-labelledby="vision-heading">
+      <h2 id="vision-heading" class="card-title">
+        <span class="card-title-icon">
+          <!-- Compass Needle Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm2.19 12.19L6 18l3.81-8.19L18 6l-3.81 8.19z" />
+          </svg>
+        </span>
+        Overview &amp; Vision
+      </h2>
+      <p class="card-desc">
+        Inspired by a certain silly pirate captain's compass, <strong>Sparrow</strong> provides crows-flight point-A to point-B
+        navigation. Sparrow is designed to give you glancable navigation guidence without the battery drain and overhead of a full maps app, and is great for situations where a maps app simply isn't appropriate.
+      </p>
+      <p class="card-desc">
+        Designed for both your phone and Wear OS smartwatch, Sparrow is ultra-lightweight,
+        battery-efficient, and privacy-first.
+      </p>
+    </section>
+
+    <!-- Core Features Card -->
+    <section class="card" aria-labelledby="features-heading">
+      <h2 id="features-heading" class="card-title">Core Features &amp; Capabilities</h2>
+      <div class="feature-list">
+        <div class="feature-item">
+          <span class="feature-title">One-Tap Google Maps Integration</span>
+          <span class="feature-desc">Share dropped pins, business locations, or directions links from Google Maps via Android's
+            native Share menu. Sparrow parses coordinates or shortened links and syncs the destination to your watch
+            immediately.</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-title">In-App Geocoder Place Search</span>
+          <span class="feature-desc">Search for destinations directly inside the app using place names (e.g., "Eiffel
+            Tower") or full street addresses via Android's native Geocoder.</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-title">Dynamic 360° Rotating Compass Dial</span>
+          <span class="feature-desc">Smooth 360° rotating dial featuring cardinal points (N, E, S, W) and a high-contrast
+            bearing needle pointing directly to your active destination.</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-title">Full Wear OS Support (Companion &amp; Standalone)</span>
+          <span class="feature-desc">Bidirectional synchronization keeps destinations synced between phone and
+            watch. The watch app also functions completely standalone using internal GPS when disconnected.</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-title">Watch Face Complications</span>
+          <span class="feature-desc">Add a mini directional compass arrow (Graphic Complication) or live distance text
+            (Text Complication) directly to your favorite Wear OS watch face.</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-title">Destination History &amp; Flexible Units</span>
+          <span class="feature-desc">Save recent destinations locally for quick re-selection. Seamlessly toggle between
+            Metric (meters / kilometers) and Imperial (feet / miles) distance units.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Practical Use Cases Card -->
+    <section class="card" aria-labelledby="usecases-heading">
+      <h2 id="usecases-heading" class="card-title">Practical Use Cases</h2>
+      <div class="use-cases-grid">
+        <div class="use-case-card">
+          <span class="use-case-name">Hiking &amp; Trail Walking</span>
+          <span class="use-case-desc">Keep continuously oriented toward your campsite, summit, or vehicle in off-grid
+            wilderness without needing cell reception or battery-draining map renders.</span>
+        </div>
+        <div class="use-case-card">
+          <span class="use-case-name">Geocaching &amp; Off-Road Exploring</span>
+          <span class="use-case-desc">Walk directly toward destination coordinates across open fields, woodlands, or desert
+            trails.</span>
+        </div>
+        <div class="use-case-card">
+          <span class="use-case-name">City Sightseeing</span>
+          <span class="use-case-desc">Set your hotel or a historic landmark, slip your phone into your pocket, and glance
+            at your smartwatch compass arrow while wandering freely.</span>
+        </div>
+        <div class="use-case-card">
+          <span class="use-case-name">Parking Spot Locator</span>
+          <span class="use-case-desc">Save your parked vehicle location before leaving, then follow the compass needle
+            straight back when returning.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to Use Card -->
+    <section class="card" aria-labelledby="how-heading">
+      <h2 id="how-heading" class="card-title">How to Use Sparrow</h2>
+      <ol class="step-list">
+        <li class="step-item">
+          <div>
+            <strong>Share from Google Maps:</strong> In Google Maps, tap any place or pin &rarr; <em>Share</em> &rarr;
+            select <em>Sparrow</em>. The heading sets automatically and syncs to your watch!
+          </div>
+        </li>
+        <li class="step-item">
+          <div>
+            <strong>Search in App:</strong> Open Sparrow, type a destination name or address into the search bar, and tap
+            <em>Find &amp; Set Destination</em>.
+          </div>
+        </li>
+        <li class="step-item">
+          <div>
+            <strong>Select from History:</strong> Tap the <em>History</em> icon in the top app bar to quickly reactivate
+            past destinations.
+          </div>
+        </li>
+        <li class="step-item">
+          <div>
+            <strong>Toggle Units:</strong> Tap the <em>Settings</em> icon to switch between Metric and Imperial distance
+            measurements.
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Privacy & Offline Principles -->
+    <section class="pills-grid" aria-label="Key Privacy Guarantees">
       <div class="pill-card highlight-green">
-        <span class="pill-label">Privacy First</span>
-        <span class="pill-value">No tracking or analytics</span>
+        <span class="pill-label">In-Use Only</span>
+        <span class="pill-value">No background location</span>
       </div>
       <div class="pill-card highlight-green">
-        <span class="pill-label">Local Processing</span>
-        <span class="pill-value">All calculations on-device</span>
+        <span class="pill-label">On-Device Only</span>
+        <span class="pill-value">100% local math</span>
+      </div>
+      <div class="pill-card highlight-green">
+        <span class="pill-label">Zero Tracking</span>
+        <span class="pill-value">No analytics or ad SDKs</span>
+      </div>
+      <div class="pill-card highlight-green">
+        <span class="pill-label">Offline Ready</span>
+        <span class="pill-value">Works without data</span>
+      </div>
+    </section>
+
+    <!-- App & Technical Specs Card -->
+    <section class="card" aria-labelledby="specs-heading">
+      <h2 id="specs-heading" class="card-title">Technical Specifications</h2>
+      <div class="specs-list">
+        <div class="spec-row">
+          <span class="spec-label">Package Name</span>
+          <span class="spec-value"><code>com.thebearofjare.sparrow</code></span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">Platforms</span>
+          <span class="spec-value">Android &amp; Wear OS</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">Target SDK</span>
+          <span class="spec-value">Android 16 (API Level 37)</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">Min SDK</span>
+          <span class="spec-value">Android 11 (API Level 30)</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">UI Framework</span>
+          <span class="spec-value">Jetpack Compose &amp; Material 3</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">Sync Layer</span>
+          <span class="spec-value">Google Play Wearable API</span>
+        </div>
       </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
       <p>&copy; Sparrow. Simple, private navigation for Android &amp; Wear&nbsp;OS.</p>
+      <p style="margin-top: 0.35rem;">
+        <a href="privacy.html">Privacy Policy</a> &bull; <a href="permissions.html">Permissions Disclosure</a>
+      </p>
     </footer>
   </main>
 
